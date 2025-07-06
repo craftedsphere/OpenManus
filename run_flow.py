@@ -1,19 +1,26 @@
 import asyncio
 import time
+from typing import Dict, Union
 
+from app.agent.base import BaseAgent
+from app.agent.craftedai import CraftedAI
 from app.agent.data_analysis import DataAnalysis
-from app.agent.manus import Manus
+from app.agent.lxp import LXPAgent
 from app.config import config
 from app.flow.flow_factory import FlowFactory, FlowType
 from app.logger import logger
 
 
 async def run_flow():
-    agents = {
-        "manus": Manus(),
+    agents: Dict[str, BaseAgent] = {
+        "craftedai": CraftedAI(),
     }
     if config.run_flow_config.use_data_analysis_agent:
         agents["data_analysis"] = DataAnalysis()
+
+    # Add LXP agent for learning experiences
+    agents["lxp"] = LXPAgent()
+
     try:
         prompt = input("Enter your prompt: ")
 

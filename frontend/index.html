@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftedAi - White-Label AI Framework Platform</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>CraftedAi</span>
+            </div>
+            <nav class="nav" id="mobile-nav">
+                <a href="#platform" class="nav-link active">Platform</a>
+                <a href="#ecosystem" class="nav-link">Ecosystem</a>
+                <a href="#framework" class="nav-link">Framework</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#live-demo" class="nav-link">Live Demo</a>
+                <a href="#agents" class="nav-link">AI Agents</a>
+                <a href="#demo" class="nav-link">Request Demo</a>
+                <a href="#dashboard" class="nav-link">Dashboard</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-secondary" onclick="toggleTheme()">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn-primary" onclick="startDemo()">
+                    <i class="fas fa-play"></i>
+                    <span class="desktop-only">Try Platform</span>
+                </button>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Platform Overview Section -->
+        <section id="platform" class="section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>The Complete White-Label AI Framework</h1>
+                    <p class="hero-subtitle">Build, deploy, and scale AI agents with enterprise-grade infrastructure. CraftedAi provides the foundation for next-generation AI applications.</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary large" onclick="startDemo()">
+                            <i class="fas fa-rocket"></i>
+                            Launch Platform
+                        </button>
+                        <button class="btn-secondary large" onclick="scrollToSection('ecosystem')">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="platform-preview">
+                        <div class="preview-header">
+                            <div class="preview-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span>CraftedAi Platform</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-item">
+                                <i class="fas fa-robot"></i>
+                                <span>AI Agent Framework</span>
+                            </div>
+                            <div class="preview-item">
+                                <i class="fas fa-cogs"></i>
+                                <span>Workflow Engine</span>
+                            </div>
+                            <div class="preview-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics Suite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform Features -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>White-Label Ready</h3>
+                    <p>Customize branding, colors, and UI to match your brand identity. Seamless integration with your existing systems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Modular Architecture</h3>
+                    <p>Pick and choose components. Deploy only what you need with our modular, scalable framework design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-level security with SOC 2 compliance, end-to-end encryption, and role-based access controls.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud-Native</h3>
+                    <p>Built for the cloud with auto-scaling, load balancing, and multi-region deployment capabilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Section -->
+        <section id="ecosystem" class="section">
+            <div class="section-header">
+                <h2>The CraftedAi Ecosystem</h2>
+                <p>Everything you need to build, deploy, and manage AI applications at scale</p>
+            </div>
+
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Core Framework</h3>
+                    <p>The foundation of your AI platform with agent management, workflow orchestration, and data processing.</p>
+                    <ul class="ecosystem-features">
+                        <li>Agent Lifecycle Management</li>
+                        <li>Workflow Designer</li>
+                        <li>Data Pipeline Engine</li>
+                        <li>API Gateway</li>
+                    </ul>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Development Tools</h3>
+                    <p>Comprehensive toolset for developers to build, test, and deploy AI applications efficiently.</p>
+                    <ul class="ecosystem-features">
+                        <li>Visual Agent Builder</li>
+                        <li>Code Editor & Debugger</li>
+                        <li>Testing Framework</li>
+                        <li>CI/CD Integration</li>
+                    </ul>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics & Monitoring</h3>
+                    <p>Real-time insights into your AI operations with advanced analytics and performance monitoring.</p>
+                    <ul class="ecosystem-features">
+                        <li>Performance Dashboards</li>
+                        <li>Usage Analytics</li>
+                        <li>Error Tracking</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="ecosystem-card">
+                    <div class="ecosystem-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>User Management</h3>
+                    <p>Complete user and team management with advanced permissions and collaboration features.</p>
+                    <ul class="ecosystem-features">
+                        <li>Role-Based Access</li>
+                        <li>Team Collaboration</li>
+                        <li>SSO Integration</li>
+                        <li>Audit Logging</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Framework Section -->
+        <section id="framework" class="section">
+            <div class="section-header">
+                <h2>Framework Capabilities</h2>
+                <p>Powerful, flexible, and scalable AI framework for enterprise applications</p>
+            </div>
+
+            <div class="framework-showcase">
+                <div class="framework-tabs">
+                    <button class="tab-btn active" onclick="switchTab('agents')">
+                        <i class="fas fa-robot"></i>
+                        AI Agents
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('workflows')">
+                        <i class="fas fa-project-diagram"></i>
+                        Workflows
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('integrations')">
+                        <i class="fas fa-plug"></i>
+                        Integrations
+                    </button>
+                    <button class="tab-btn" onclick="switchTab('deployment')">
+                        <i class="fas fa-rocket"></i>
+                        Deployment
+                    </button>
+                </div>
+
+                <div class="tab-content active" id="agents-tab">
+                    <div class="framework-content">
+                        <div class="framework-text">
+                            <h3>Intelligent Agent Framework</h3>
+                            <p>Create sophisticated AI agents with our comprehensive framework. Support for multiple AI models, custom logic, and seamless integration.</p>
+                            <div class="framework-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Multi-Model Support (GPT-4, Claude, Gemini)</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom Agent Logic & Memory</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Real-time Learning & Adaptation</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Agent-to-Agent Communication</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framework-visual">
+                            <div class="agent-flow">
+                                <div class="flow-item">Input</div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-item">Process</div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-item">Output</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="workflows-tab">
+                    <div class="framework-content">
+                        <div class="framework-text">
+                            <h3>Visual Workflow Designer</h3>
+                            <p>Design complex AI workflows with our intuitive drag-and-drop interface. Connect agents, data sources, and external services seamlessly.</p>
+                            <div class="framework-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Drag & Drop Interface</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Conditional Logic & Branching</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Error Handling & Recovery</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Version Control & Rollback</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framework-visual">
+                            <div class="workflow-diagram">
+                                <div class="workflow-node">Start</div>
+                                <div class="workflow-connector"></div>
+                                <div class="workflow-node">Process</div>
+                                <div class="workflow-connector"></div>
+                                <div class="workflow-node">End</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="integrations-tab">
+                    <div class="framework-content">
+                        <div class="framework-text">
+                            <h3>Enterprise Integrations</h3>
+                            <p>Connect with your existing systems and data sources. Pre-built connectors for popular enterprise tools and databases.</p>
+                            <div class="framework-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>REST & GraphQL APIs</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Database Connectors</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Cloud Service Integration</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Custom Webhook Support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framework-visual">
+                            <div class="integration-grid">
+                                <div class="integration-item">CRM</div>
+                                <div class="integration-item">ERP</div>
+                                <div class="integration-item">Database</div>
+                                <div class="integration-item">Cloud</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="deployment-tab">
+                    <div class="framework-content">
+                        <div class="framework-text">
+                            <h3>Flexible Deployment Options</h3>
+                            <p>Deploy anywhere - cloud, on-premises, or hybrid. Scale automatically based on demand with enterprise-grade reliability.</p>
+                            <div class="framework-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Multi-Cloud Support</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>On-Premises Deployment</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Auto-Scaling & Load Balancing</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Blue-Green Deployments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framework-visual">
+                            <div class="deployment-options">
+                                <div class="deployment-option">Cloud</div>
+                                <div class="deployment-option">Hybrid</div>
+                                <div class="deployment-option">On-Prem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase Section -->
+        <section id="showcase" class="section">
+            <div class="section-header">
+                <h2>Platform Showcase</h2>
+                <p>See CraftedAi in action across different industries and use cases</p>
+            </div>
+
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education Platform</h3>
+                    </div>
+                    <p>Personalized learning experiences with AI-powered curriculum generation and student progress tracking.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">50K+</span>
+                            <span class="metric-label">Students</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Engagement</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('education')">View Demo</button>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Enterprise Automation</h3>
+                    </div>
+                    <p>Streamline business processes with intelligent automation and decision-making workflows.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10K+</span>
+                            <span class="metric-label">Processes</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">60%</span>
+                            <span class="metric-label">Time Saved</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('enterprise')">View Demo</button>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Human Resources</h3>
+                    </div>
+                    <p>AI-powered recruitment, employee onboarding, performance management, and talent development.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">5K+</span>
+                            <span class="metric-label">Employees</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">Efficiency</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('hr')">View Demo</button>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Client Onboarding</h3>
+                    </div>
+                    <p>Streamlined client acquisition and onboarding processes with intelligent document processing and verification.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">2K+</span>
+                            <span class="metric-label">Clients</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">80%</span>
+                            <span class="metric-label">Faster</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('onboarding')">View Demo</button>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Healthcare</h3>
+                    </div>
+                    <p>Patient relationship management, appointment scheduling, and health monitoring with clinical decision support.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">10K+</span>
+                            <span class="metric-label">Patients</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('healthcare')">View Demo</button>
+                </div>
+
+                <div class="showcase-card">
+                    <div class="showcase-header">
+                        <div class="showcase-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Financial Analytics</h3>
+                    </div>
+                    <p>Advanced financial modeling and risk assessment with real-time market analysis and predictions.</p>
+                    <div class="showcase-metrics">
+                        <div class="metric">
+                            <span class="metric-value">$2B+</span>
+                            <span class="metric-label">Assets</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">99.9%</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                    </div>
+                    <button class="btn-secondary" onclick="viewShowcase('finance')">View Demo</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Demo Section -->
+        <section id="live-demo" class="section">
+            <div class="section-header">
+                <h2>Live Agentic Flow Demo</h2>
+                <p>Experience the power of CraftedAi agents in real-time simulations</p>
+            </div>
+
+            <div class="demo-selector">
+                <div class="demo-categories">
+                    <button class="demo-category active" onclick="selectDemoCategory('education')">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </button>
+                    <button class="demo-category" onclick="selectDemoCategory('healthcare')">
+                        <i class="fas fa-heart"></i>
+                        <span>Healthcare</span>
+                    </button>
+                    <button class="demo-category" onclick="selectDemoCategory('hr')">
+                        <i class="fas fa-users"></i>
+                        <span>HR</span>
+                    </button>
+                    <button class="demo-category" onclick="selectDemoCategory('onboarding')">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Onboarding</span>
+                    </button>
+                    <button class="demo-category" onclick="selectDemoCategory('enterprise')">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Enterprise</span>
+                    </button>
+                    <button class="demo-category" onclick="selectDemoCategory('finance')">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Finance</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="live-demo-container">
+                <div class="demo-interface">
+                    <div class="demo-header">
+                        <div class="demo-title">
+                            <h3 id="demo-title">Education Agent Demo</h3>
+                            <p id="demo-description">Personalized learning path generation and student progress tracking</p>
+                        </div>
+                        <div class="demo-controls">
+                            <button class="btn-secondary" onclick="resetDemo()">
+                                <i class="fas fa-redo"></i>
+                                Reset
+                            </button>
+                            <button class="btn-primary" onclick="startLiveDemo()">
+                                <i class="fas fa-play"></i>
+                                Start Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="demo-workspace">
+                        <div class="demo-input-panel">
+                            <h4>Input</h4>
+                            <div class="input-area">
+                                <textarea id="demo-input" placeholder="Enter your request or scenario..." rows="4"></textarea>
+                                <button class="btn-primary" onclick="submitDemoInput()">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="demo-flow-visualization">
+                            <h4>Agent Flow</h4>
+                            <div class="flow-steps" id="flow-steps">
+                                <div class="flow-step" data-step="input">
+                                    <div class="step-icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="step-label">User Input</div>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-step" data-step="processing">
+                                    <div class="step-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div class="step-label">Processing</div>
+                                </div>
+                                <div class="flow-arrow">→</div>
+                                <div class="flow-step" data-step="output">
+                                    <div class="step-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="step-label">AI Response</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="demo-output-panel">
+                            <h4>Output</h4>
+                            <div class="output-area" id="demo-output">
+                                <div class="output-placeholder">
+                                    <i class="fas fa-comments"></i>
+                                    <p>Start the demo to see the agent in action</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-metrics">
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" id="response-time">0.0s</div>
+                                <div class="metric-label">Response Time</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" id="success-rate">100%</div>
+                                <div class="metric-label">Success Rate</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" id="agent-status">Ready</div>
+                                <div class="metric-label">Agent Status</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Agents Section -->
+        <section id="agents" class="section">
+            <div class="section-header">
+                <h2>Specialized AI Agents</h2>
+                <p>Pre-built intelligent agents designed for specific industry use cases</p>
+            </div>
+
+            <div class="agents-grid">
+                <div class="agent-card active">
+                    <div class="agent-header">
+                        <div class="agent-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="agent-status active">Active</div>
+                    </div>
+                    <div class="agent-content">
+                        <h3>Onboarding Agent</h3>
+                        <p>Automates client onboarding with intelligent document processing, verification, and personalized welcome experiences.</p>
+                        <div class="agent-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Onboarding Time</span>
+                                <span class="metric-value">-75%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Success Rate</span>
+                                <span class="metric-value">98.5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-actions">
+                        <button class="btn-small" onclick="testAgent('onboarding')">Test</button>
+                        <button class="btn-small" onclick="configureAgent('onboarding')">Configure</button>
+                        <button class="btn-small danger" onclick="stopAgent('onboarding')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="agent-status running">Running</div>
+                    </div>
+                    <div class="agent-content">
+                        <h3>Healthcare Assistant</h3>
+                        <p>Patient relationship management, appointment scheduling, and health monitoring with HIPAA compliance.</p>
+                        <div class="agent-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Patient Satisfaction</span>
+                                <span class="metric-value">94%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Response Time</span>
+                                <span class="metric-value">< 30s</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-actions">
+                        <button class="btn-small" onclick="testAgent('healthcare')">Test</button>
+                        <button class="btn-small" onclick="configureAgent('healthcare')">Configure</button>
+                        <button class="btn-small danger" onclick="stopAgent('healthcare')">Stop</button>
+                    </div>
+                </div>
+
+
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="agent-status running">Running</div>
+                    </div>
+                    <div class="agent-content">
+                        <h3>HR Coordinator</h3>
+                        <p>Recruitment automation, employee onboarding, performance reviews, and talent development.</p>
+                        <div class="agent-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Hiring Speed</span>
+                                <span class="metric-value">+40%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Retention Rate</span>
+                                <span class="metric-value">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-actions">
+                        <button class="btn-small" onclick="testAgent('hr')">Test</button>
+                        <button class="btn-small" onclick="configureAgent('hr')">Configure</button>
+                        <button class="btn-small danger" onclick="stopAgent('hr')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="agent-status active">Active</div>
+                    </div>
+                    <div class="agent-content">
+                        <h3>Curriculum Architect</h3>
+                        <p>Dynamically generates personalized learning paths and curriculum structures for educational institutions.</p>
+                        <div class="agent-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Tasks Completed</span>
+                                <span class="metric-value">1,247</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Success Rate</span>
+                                <span class="metric-value">96.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-actions">
+                        <button class="btn-small" onclick="testAgent('curriculum')">Test</button>
+                        <button class="btn-small" onclick="configureAgent('curriculum')">Configure</button>
+                        <button class="btn-small danger" onclick="stopAgent('curriculum')">Stop</button>
+                    </div>
+                </div>
+
+                <div class="agent-card">
+                    <div class="agent-header">
+                        <div class="agent-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="agent-status running">Running</div>
+                    </div>
+                    <div class="agent-content">
+                        <h3>Compliance Monitor</h3>
+                        <p>Automated compliance checking for educational standards, healthcare regulations, and financial requirements.</p>
+                        <div class="agent-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Compliance Rate</span>
+                                <span class="metric-value">99.7%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Audit Time</span>
+                                <span class="metric-value">-85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="agent-actions">
+                        <button class="btn-small" onclick="testAgent('compliance')">Test</button>
+                        <button class="btn-small" onclick="configureAgent('compliance')">Configure</button>
+                        <button class="btn-small danger" onclick="stopAgent('compliance')">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Request Demo Section -->
+        <section id="demo" class="section">
+            <div class="demo-section">
+                <div class="demo-content">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Experience the power of CraftedAi's white-label AI framework. Schedule a personalized demo to see how our platform can revolutionize your operations.</p>
+
+                    <div class="demo-features">
+                        <div class="demo-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>30-minute personalized demo</span>
+                        </div>
+                        <div class="demo-feature">
+                            <i class="fas fa-users"></i>
+                            <span>Live Q&A with our experts</span>
+                        </div>
+                        <div class="demo-feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Custom use case exploration</span>
+                        </div>
+                        <div class="demo-feature">
+                            <i class="fas fa-gift"></i>
+                            <span>Free trial access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-form">
+                    <h3>Request Your Demo</h3>
+                    <form id="demoForm" onsubmit="submitDemoRequest(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="industry">Industry *</label>
+                            <select id="industry" name="industry" required>
+                                <option value="">Select Industry</option>
+                                <option value="education">Education</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Financial Services</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="enterprise">Enterprise</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="useCase">Primary Use Case</label>
+                            <textarea id="useCase" name="useCase" rows="3" placeholder="Tell us about your specific needs..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Implementation Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="immediate">Immediate (0-3 months)</option>
+                                <option value="short">Short-term (3-6 months)</option>
+                                <option value="medium">Medium-term (6-12 months)</option>
+                                <option value="long">Long-term (12+ months)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">
+                            <i class="fas fa-calendar-check"></i>
+                            Schedule Demo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section (Existing) -->
+        <section id="dashboard" class="section">
+            <div class="section-header">
+                <h2>Platform Dashboard</h2>
+                <p>Real-time monitoring and control of your AI ecosystem</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Active Agents</h3>
+                        <div class="stat-value">12</div>
+                        <div class="stat-change positive">+3 today</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Running Workflows</h3>
+                        <div class="stat-value">8</div>
+                        <div class="stat-change positive">+2 today</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Success Rate</h3>
+                        <div class="stat-value">94.2%</div>
+                        <div class="stat-change positive">+2.1%</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Avg Response Time</h3>
+                        <div class="stat-value">1.2s</div>
+                        <div class="stat-change negative">+0.3s</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Activity Feed -->
+            <div class="dashboard-grid">
+                <div class="activity-feed">
+                    <h3>Live Activity Feed</h3>
+                    <div class="feed-container">
+                        <div class="feed-item">
+                            <div class="feed-icon success">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="feed-content">
+                                <div class="feed-title">Curriculum Agent completed task</div>
+                                <div class="feed-desc">Generated personalized learning path for Student ID: 8472</div>
+                                <div class="feed-time">2 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-icon info">
+                                <i class="fas fa-info"></i>
+                            </div>
+                            <div class="feed-content">
+                                <div class="feed-title">Compliance Monitor started</div>
+                                <div class="feed-desc">Checking regulatory compliance for Q3 reports</div>
+                                <div class="feed-time">5 minutes ago</div>
+                            </div>
+                        </div>
+                        <div class="feed-item">
+                            <div class="feed-icon warning">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="feed-content">
+                                <div class="feed-title">Analytics Agent alert</div>
+                                <div class="feed-desc">Unusual pattern detected in student performance data</div>
+                                <div class="feed-time">8 minutes ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="actions-grid">
+                        <button class="action-btn" onclick="createAgent()">
+                            <i class="fas fa-plus"></i>
+                            <span>Create Agent</span>
+                        </button>
+                        <button class="action-btn" onclick="createWorkflow()">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>New Workflow</span>
+                        </button>
+                        <button class="action-btn" onclick="runTest()">
+                            <i class="fas fa-vial"></i>
+                            <span>Run Test</span>
+                        </button>
+                        <button class="action-btn" onclick="exportData()">
+                            <i class="fas fa-download"></i>
+                            <span>Export Data</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

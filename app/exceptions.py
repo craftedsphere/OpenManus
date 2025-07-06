@@ -5,9 +5,9 @@ class ToolError(Exception):
         self.message = message
 
 
-class OpenManusError(Exception):
-    """Base exception for all OpenManus errors"""
+class OpenCraftedAIError(Exception):
+    """Base exception for all OpenCraftedAI errors"""
 
 
-class TokenLimitExceeded(OpenManusError):
+class TokenLimitExceeded(OpenCraftedAIError):
     """Exception raised when the token limit is exceeded"""

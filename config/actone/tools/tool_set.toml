@@ -1,0 +1,68 @@
+# ActOne Tool Set Configuration
+# This file defines all tools available in the ActOne HR workflow system
+
+[tools.resume_parser]
+class = "app.tool.actone.resume_parser.ResumeParser"
+enabled = true
+description = "Parse resumes and extract candidate information"
+max_concurrent = 10
+timeout = 120
+
+[tools.job_matcher]
+class = "app.tool.actone.job_matcher.JobMatcher"
+enabled = true
+description = "Match candidates to job requirements"
+max_concurrent = 8
+timeout = 90
+
+[tools.hris_adapter]
+class = "app.tool.actone.hris_adapter.HRISAdapter"
+enabled = true
+description = "HRIS system integration adapter"
+max_concurrent = 5
+timeout = 60
+
+[tools.skill_analyzer]
+class = "app.tool.actone.skill_analyzer.SkillAnalyzer"
+enabled = true
+description = "Analyze skills and identify gaps"
+max_concurrent = 6
+timeout = 180
+
+[tools.training_generator]
+class = "app.tool.actone.training_generator.TrainingGenerator"
+enabled = true
+description = "Generate training recommendations"
+max_concurrent = 4
+timeout = 240
+
+[tools.compliance_checker]
+class = "app.tool.actone.compliance_checker.ComplianceChecker"
+enabled = true
+description = "Check compliance and identify risks"
+max_concurrent = 3
+timeout = 120
+
+[tools.dashboard_generator]
+class = "app.tool.actone.dashboard_generator.DashboardGenerator"
+enabled = true
+description = "Generate dashboards and reports"
+max_concurrent = 5
+timeout = 180
+
+# Tool Groups for Workflows
+[tool_groups]
+recruitment_tools = ["resume_parser", "job_matcher", "hris_adapter"]
+development_tools = ["skill_analyzer", "training_generator", "hris_adapter"]
+compliance_tools = ["compliance_checker", "hris_adapter"]
+reporting_tools = ["dashboard_generator", "hris_adapter"]
+
+# Tool Configuration
+[tool_configs]
+resume_parser.supported_formats = ["pdf", "docx", "txt", "json"]
+job_matcher.scoring_algorithm = "weighted_match"
+hris_adapter.supported_systems = ["workday", "bamboo", "gusto", "adp", "custom"]
+skill_analyzer.analysis_depth = "comprehensive"
+training_generator.provider_preferences = ["coursera", "udemy", "internal"]
+compliance_checker.jurisdictions = ["US", "EU", "CA"]
+dashboard_generator.export_formats = ["pdf", "excel", "powerpoint", "html"]

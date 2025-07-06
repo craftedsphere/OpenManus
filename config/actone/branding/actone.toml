@@ -1,0 +1,50 @@
+# ActOne Branding Configuration
+# This file defines branding and customization options for white-label deployments
+
+[branding]
+company_name = "ActOne HR Solutions"
+company_logo_url = "https://actone.com/assets/logo.png"
+primary_color = "#3b82f6"
+secondary_color = "#10b981"
+accent_color = "#f59e0b"
+font_family = "Inter, system-ui, sans-serif"
+theme = "modern"
+
+[contact]
+support_email = "support@actone.com"
+sales_email = "sales@actone.com"
+phone = "+1-555-0123"
+website = "https://actone.com"
+
+[features]
+enable_custom_branding = true
+enable_white_label = true
+enable_custom_domain = true
+enable_branded_reports = true
+enable_custom_workflows = true
+
+[integrations]
+default_hris = "workday"
+default_lms = "cornerstone"
+default_crm = "salesforce"
+default_bi = "tableau"
+
+[workflows]
+default_recruitment_flow = "standard"
+default_development_flow = "comprehensive"
+default_compliance_flow = "automated"
+default_reporting_flow = "monthly"
+
+[reporting]
+default_dashboard_type = "comprehensive"
+default_report_period = "monthly"
+enable_automated_reports = true
+enable_custom_metrics = true
+enable_export_formats = ["pdf", "excel", "powerpoint"]
+
+[security]
+enable_sso = true
+enable_mfa = true
+enable_audit_logging = true
+enable_data_encryption = true
+compliance_standards = ["SOC2", "GDPR", "CCPA"]
